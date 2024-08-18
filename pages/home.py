@@ -69,7 +69,7 @@ col1, col2 = st.columns([1, 7])
 with col1:
     prob_stat = """
         <div style="background-color:#275d5d;padding:4px">
-        <h1 style='text-align: center; color: white; font-size: 20px;'>Problem Statement</h1>
+        <h1 style='text-align: center; color: white; font-size: 18px;'>Problem Statement</h1>
         </div>
         """
     st.markdown(prob_stat, unsafe_allow_html=True)
