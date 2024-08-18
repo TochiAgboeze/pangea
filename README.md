@@ -47,7 +47,6 @@ Heatmaps were generated to display the prevalence of AMR genes across different 
 # Comparative Analysis
 Key variables analysed included country, resistance status (categorized as Intermediate, Resistant, or Susceptible), MIC, and relevant clinical and demographic factors. Horizontal bar plots were generated to visualize the distribution of resistance status across different African countries. To further explore the relationship between MIC values and country of origin, a linear regression model was employed. This model controlled for the resistance status of the isolates, enabling an examination of how MIC values vary across countries while accounting for whether isolates are intermediate, resistant, or susceptible.
 ![Afr_others2](https://github.com/user-attachments/assets/ff0fd351-428d-4bb0-8651-b02904580dfc)
-![perc_prev](https://github.com/user-attachments/assets/f59bbc8e-ba71-491f-80fe-0cbdd3b6f7e5)
 
 # Machine Learning
 Machine learning approaches were implemented to predict resistance gene profiles and MIC values. For gene prediction, metadata was combined with AMR status and corresponding MIC values. A Random Forest model was trained to predict the presence or absence of specific resistance genes based on the antibiotic resistance profiles and MIC values. In parallel, a LightGBM model was developed to predict the resistance status of antibiotics, leveraging both the metadata and the gene profiles as input variables.
