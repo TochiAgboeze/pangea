@@ -32,7 +32,7 @@ if currentStep == 0:
         gene_classes = st.multiselect('Select AMR gene sub-class(es)', ['Carbapenemase', 'Beta-lactamase', 'ESBL', 'AmpC beta-lactamase'])
 
     #TIME SERIES VISUALIZATION COMPARING THE TREND OF RECORDED GENOTYPIC DATA OF SELECTED CONTINENT(S) WITH THE GLOBAL AVERAGE
-    def compare_with_global_average(df, selected_continents=None):
+    def compare_with_global_average(df, selected_continents='Africa'):
 
         df_aggregated = df.groupby(['Year', 'Continents']).size().reset_index(name='Count')
         global_avg = df_aggregated.groupby('Year')['Count'].mean().reset_index(name='Global Average')
