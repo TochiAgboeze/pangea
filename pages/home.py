@@ -86,6 +86,6 @@ with col2:
 with st.sidebar:
     st.info("""Developed by **Agboeze Tochukwu, Daramola Oluwasegun, Akomolafe Ayobami,** and **Adedeji Roqeeb** using Pfizer's
             ATLAS dataset as part of the [Vivli AMR Data Challenge 2024](https://amr.vivli.org/breaking-news-vivli-announces-the-2024-amr-surveillance-data-challenge/).""")
-    st.markdown('''[![Github Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/OluwasegunIsaac/gaia)''')
+    st.markdown('''[![Github Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/OluwasegunIsaac/pangea)''')
     st.markdown("<br>",unsafe_allow_html=True)
 
