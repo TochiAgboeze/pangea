@@ -47,7 +47,7 @@ with col2:
     )
     st.write("")
     if st.button("Go to the Comparative Analysis page", type="primary", key="CA"):
-        st.switch_page("pages/Analysis.py")
+        st.switch_page("pages/analysis.py")
 
 with col3:
     st.markdown("<h1 style='text-align: center; color: black; font-size: 30px;'>Machine Learning</h1>", unsafe_allow_html=True)
