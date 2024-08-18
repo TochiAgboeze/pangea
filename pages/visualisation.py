@@ -24,9 +24,10 @@ if currentStep == 0:
     with st.sidebar:
         st.header("EDA Parameters")
         region_type = st.multiselect('Select Continent', ['Africa','Europe', 'North America','South America','Asia','Oceania'])
-        species = st.multiselect('Select Species', ['Pseudomonas aeruginosa', 'Enterococcus faecalis', 'Klebsiella pneumoniae',
-                                                    'Staphylococcus aureus', 'Streptococcus pneumoniae','Acinetobacter baumannii',
-                                                    'Enterobacter spp', 'Escherichia coli'])
+        species = st.multiselect('Select Species', ['Pseudomonas aeruginosa', 'Proteus mirabilis','Acinetobacter baumannii', 
+                                                    'Klebsiella oxytoca', 'Escherichia coli', 'Enterobacter cloacae', 
+                                                    'Klebsiella pneumoniae', 'Serratia marcescens', 'Citrobacter freundii',
+                                                   'Providencia stuartii'])
         st.header("Sankey Parameter")
         gene_classes = st.multiselect('Select AMR gene sub-class(es)', ['Carbapenemase', 'Beta-lactamase', 'ESBL', 'AmpC beta-lactamase'])
 
@@ -77,7 +78,7 @@ if currentStep == 0:
         if pivot_table.empty:
             st.warning("No data available for the selected filters.")
            
-        class_colors = {'ESBL': 'skyblue', 'Carbapenemase': 'lightgreen','AmpC beta-lactamase': 'lightcoral','Beta-lactamase': 'grey',}
+        class_colors = {'ESBL': 'skyblue', 'Carbapenemase': 'lightgreen','AmpC beta-lactamase': 'lightcoral','Beta-lactamase': 'grey'}
         gene_classes = pivot_table['Gene Class']
         row_colors = gene_classes.map(class_colors)
         pivot_table = pivot_table.drop(columns=['Gene Class'])
@@ -240,9 +241,10 @@ if currentStep == 1:
 # Sidebar for user inputs
     with st.sidebar:
         st.header("Global Map selection")
-        species = st.multiselect('Select Species', ['Pseudomonas aeruginosa', 'Enterococcus faecalis', 'Klebsiella pneumoniae',
-                                              'Staphylococcus aureus', 'Streptococcus pneumoniae','Acinetobacter baumannii',
-                                              'Enterobacter spp', 'Escherichia coli'])
+        species = st.multiselect('Select Species', ['Pseudomonas aeruginosa', 'Proteus mirabilis','Acinetobacter baumannii', 
+                                                    'Klebsiella oxytoca', 'Escherichia coli', 'Enterobacter cloacae', 
+                                                    'Klebsiella pneumoniae', 'Serratia marcescens', 'Citrobacter freundii',
+                                                   'Providencia stuartii'])
         region_type = st.selectbox('Select Continent', ['Africa','Europe', 'North America','South America','Asia','Oceania'])
         genotypes = st.slider('Select Number of Top Genotypes to Display', min_value=1, max_value=3, value=1)
         top_n_strains = st.slider('Select Number of strains to network', min_value=1, max_value=10, value=10)
