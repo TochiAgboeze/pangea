@@ -49,7 +49,7 @@ Key variables analysed included country, resistance status (categorized as Inter
 ![Afr_others2](https://github.com/user-attachments/assets/ff0fd351-428d-4bb0-8651-b02904580dfc)
 
 # Machine Learning
-Machine learning approaches were implemented to predict resistance gene profiles and MIC values. For gene prediction, metadata was combined with AMR status and corresponding MIC values. A Random Forest model was trained to predict the presence or absence of specific resistance genes based on the antibiotic resistance profiles and MIC values. In parallel, a LightGBM model was developed to predict the resistance status of antibiotics, leveraging both the metadata and the gene profiles as input variables.
+Machine learning approaches were implemented to predict resistance gene profiles and MIC values. For gene prediction, metadata was combined with AMR status and corresponding MIC values. A Random Forest model was trained to predict the presence or absence of specific resistance genes based on the antibiotic resistance profiles and MIC values. In parallel, a LightGBM model was developed to predict the resistance status of antibiotics, leveraging both the metadata and the gene profiles as input variables.  Since genomic surveillance is limited by insufficient resources, this algorithm could assist in prioritising isolates with unusual resistance profiles for further genomic sequencing and help identify high-risk pathogenic strains.
 ![image](https://github.com/user-attachments/assets/b435019b-8b83-4143-b8bd-89ac62f48e3a)
 
 # **Authors**
