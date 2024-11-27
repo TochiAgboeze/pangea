@@ -2,7 +2,7 @@
 This README file provides information about the packages and datasets used in the code provided.
 
 # Problem Statement
-Antimicrobial resistance (AMR) surveillance in Africa primarily use traditional antimicrobial susceptibility testing (AST) methods, which are ineffective for early detection of pathogenic outbreaks and frequently fail to discover resistance mechanisms. Although next-generation sequencing (NGS) offers a more comprehensive understanding of these systems, its high cost and resource limitations prevent widespread adoption throughout the continent.
+Antimicrobial resistance (AMR) surveillance in Africa primarily use traditional antimicrobial susceptibility testing (AST) methods, which are insufficient for early detection of pathogenic outbreaks and frequently fail to discover resistance mechanisms. Although next-generation sequencing (NGS) offers a more comprehensive understanding of these systems, its high cost and resource limitations prevent widespread adoption throughout the continent.
 
 
 To address these challenges, we utilised existing AST data to predict resistance gene profiles, providing a cost-effective and accessible means to gain genotypic insights. This approach enhanced the speed and accuracy of outbreak detection and bolster public health interventions in Africa, where genomic surveillance resources are limited. Our web application (PANGEA) is a web application that provides:
